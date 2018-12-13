@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+        version="1.0"
+        xmlns="http://java.sun.com/xml/ns/persistence">
+       <persistence-unit
+               name="pu"
+               transaction-type="RESOURCE_LOCAL">
+              <provider>org.hibernate.ejb.HibernatePersistence</provider>
+              <class>org.petermac.data.UserLogin</class>
+              <properties>
+                     <!--&lt;!&ndash; My code is running fine without adding following line. In case an error you may try following line &ndash;&gt;-->
+                     <!--<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>-->
+                     <!--<property name="hibernate.connection.url"-->
+                               <!--value="jdbc:mysql://localhost:3306/Holly" />-->
+                     <!--<property name="hibernate.connection.driver_class"-->
+                               <!--value="com.mysql.jdbc.Driver" />-->
+                     <!--<property name="hibernate.connection.password"-->
+                               <!--value="bluesky.123" />-->
+                     <!--<property name="hibernate.connection.username"-->
+                               <!--value="root" />-->
+              </properties>
+       </persistence-unit>
+</persistence>
